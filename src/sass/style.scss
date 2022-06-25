@@ -19,5 +19,41 @@ body {
 	margin: 0 auto;
 }
 
+.btn {
+	background-color: $beige;
+	color: $blue;
+	padding: 20px;
+	border-radius: 8px;
+}
+
+.btn:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.btn:active {
+	background-color: $white;
+	text-decoration: none;
+}
+
+a {
+	color: $blue;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:active {
+	text-decoration: none;
+	color: $beige;
+}
+
+
 @import 'blocks/header';
 @import 'blocks/nav';
+@import 'blocks/slider';
+@import 'blocks/fonts';
+@import 'blocks/media';

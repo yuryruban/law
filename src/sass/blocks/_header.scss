@@ -1,0 +1,18 @@
+ .header {
+ 	margin-top: 30px;
+
+ 	&__wrapper {
+ 		display: flex;
+ 		justify-content: space-between;
+ 		align-items: center;
+ 	}
+
+ 	&__wrapper-contact {
+ 		display: flex;
+ 		align-items: center;
+ 	}
+
+ 	&__phone {
+ 		margin-right: 30px;
+ 	}
+ }

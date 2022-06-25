@@ -1,0 +1,33 @@
+.nav {
+	margin-top: 23px;
+
+	&__items {
+		background-color: $white;
+		padding: 20px 0px;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		border-radius: 8px;
+	}
+
+	&__item {
+		color: $blue;
+		list-style-type: none;
+		position: relative;
+
+		&::after {
+			content: '';
+			width: 1px;
+			height: 40px;
+			background-color: $blue;
+			position: absolute;
+			top: -50%;
+			right: -53px;
+		}
+
+		&:last-child::after {
+			display: none;
+		}
+
+	}
+}
