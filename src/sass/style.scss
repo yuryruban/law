@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap');
+@import 'variables/variables';
+@import 'mixin/mixin';
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'IBM Plex Sans', sans-serif;
+	background-color: $blue;
+	color: $white;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/nav';
