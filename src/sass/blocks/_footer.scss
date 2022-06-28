@@ -1,0 +1,35 @@
+.footer {
+	color: $white;
+	padding: 80px 0 30px 0;
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 427px 203px repeat(4, auto);
+	}
+
+	&__items {
+		margin-top: 30px;
+	}
+
+	&__item {
+		margin-bottom: 24px;
+		list-style-type: none;
+	}
+
+	&__menu {
+		&-item {
+			list-style-type: none;
+			margin-bottom: 24px;
+		}
+	}
+
+	&__social {
+		&-item {
+			margin-bottom: 15px;
+		}
+	}
+
+	a {
+		color: $white;
+	}
+}

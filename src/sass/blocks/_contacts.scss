@@ -1,0 +1,35 @@
+.contacts {
+	background-color: $white;
+	color: $blue;
+	padding: 100px 0;
+
+	&__wrapper {
+		display: grid;
+		grid-template-columns: 308px auto;
+		column-gap: 100px;
+	}
+
+	&__heading {
+		margin-bottom: 80px;
+	}
+
+	&__text {
+		margin-bottom: 39px;
+		position: relative;
+
+		&::after {
+			content: '';
+			height: 1px;
+			width: 133px;
+			background-color: $beige;
+			bottom: -23px;
+			left: 0;
+			position: absolute;
+
+		}
+
+		&:last-child::after {
+			display: none;
+		}
+	}
+}
