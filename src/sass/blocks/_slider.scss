@@ -13,7 +13,7 @@
 	}
 
 	&__text {
-		display: flex;
+		display: none;
 		justify-content: flex-start;
 		align-items: center;
 		color: $blue;
@@ -23,10 +23,15 @@
 		border-radius: 8px;
 		max-width: 932px;
 		height: 230px;
+
+		&_active {
+			display: flex;
+		}
 	}
 
 	&__btn {
 		position: absolute;
+		cursor: pointer;
 	}
 
 	&__left,

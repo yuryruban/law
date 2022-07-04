@@ -218,12 +218,45 @@
 		padding: 0 10px;
 	}
 
+	.typography {
+		font-size: 40px;
+		line-height: 52px;
+	}
+
 	.heading_1 {
-		font-size: 25px;
+		font-size: 21px;
+		line-height: 27px;
+	}
+
+	.heading_2 {
+		font-size: 28px;
 		line-height: 30px;
 	}
 
+	.heading_3 {
+		font-size: 18px;
+		line-height: 23px;
+	}
+
+
+	.text_1 {
+		font-size: 24px;
+		line-height: 31px;
+	}
+
+	.text_2 {
+		font-size: 16px;
+		line-height: 20px;
+	}
+
+	.text_btn {
+		font-size: 12px;
+		line-height: 16px;
+	}
+
 	.header {
+		position: relative;
+
 		&__logo {
 			margin: 0 auto;
 		}
@@ -234,20 +267,84 @@
 	}
 
 	.nav {
-		display: none;
+		position: absolute;
+		top: -30px;
+		left: -100%;
+		margin-top: 0px;
+		width: 70%;
+
+		&_active {
+			left: 0px;
+			animation: menu-move 3s;
+		}
+
+		&_disactive {
+			left: -100%;
+			animation: menu-back 2.2s;
+		}
+
+		@keyframes menu-move {
+			from {
+				left: -100%;
+			}
+
+			to {
+				left: 0px;
+			}
+		}
+
+		@keyframes menu-back {
+			from {
+				left: 0px;
+			}
+
+			to {
+				left: -100%;
+			}
+		}
+
+		&__items {
+			background-color: rgba(255, 255, 255, 0.85);
+			border-radius: 0px;
+			flex-direction: column;
+			z-index: 5;
+			height: 100vh;
+		}
+
+		&__item {
+			font-size: 30px;
+
+			a {
+				color: $blue;
+			}
+
+			&::after {
+				display: none;
+			}
+		}
+
 	}
 
 	.slider {
 		margin-top: 20px;
 		height: 300px;
+		z-index: -1;
 
 		&__text {
-			padding: 10px 20px;
+			padding: 10px 17px;
 		}
 	}
 
 	.steps {
+		padding: 40px 0 50px 0;
+
+		&__heading {
+			margin-top: 40px;
+			text-align: center;
+		}
+
 		&__wrapper {
+			margin-top: 40px;
 			flex-wrap: wrap;
 		}
 
@@ -258,6 +355,72 @@
 
 		&__vert-line {
 			display: none;
+		}
+
+		&__step {
+			text-align: center;
+
+			&-num {
+				text-align: center;
+				font-size: 45px;
+			}
+		}
+	}
+
+	.services {
+		padding: 50px 0;
+
+		&__heading {
+			text-align: center;
+		}
+
+		&__menu {
+			margin-top: 30px;
+
+			&-item {
+				padding: 5px 10px;
+			}
+		}
+
+		&__btn {
+			margin-top: 40px;
+		}
+	}
+
+	.contacts {
+		padding: 30px 0 30px 0;
+
+		&__heading {
+			margin-bottom: 30px;
+		}
+	}
+
+	.forma {
+		&__order {
+			margin: 30px auto 0 auto;
+
+			input,
+			button {
+				width: 80%;
+				margin: 0 auto;
+				height: 40px;
+			}
+		}
+	}
+
+	img {
+		max-width: 300px;
+	}
+
+	.footer {
+		&__wrapper {
+			grid-template-columns: repeat(auto-fit, 310px);
+			justify-content: center;
+			align-items: flex-start;
+		}
+
+		&__line {
+			margin-top: 30px;
 		}
 	}
 }

@@ -30,7 +30,12 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="header" id="header">
+		<div class="burger">
+			<div class="burger__item"></div>
+			<div class="burger__item"></div>
+			<div class="burger__item"></div>
+		</div>
 		<div class="container">
 			<div class="header__wrapper">
 				<div class="header__logo heading_1"><img src="img/logo_white.png" alt="Lexrus26"></div>
@@ -39,7 +44,7 @@
 					<div class="btn">Заказать обратный звонок</div>
 				</div>
 			</div>
-			<nav class="nav">
+			<nav class="nav nav_disactive">
 
 				<ul class="nav__items">
 					<li class="nav__item link"><a href="#">Главная</a></li>
@@ -71,8 +76,13 @@
 								fill="white" />
 						</svg>
 					</div>
-					<div class="slider__text heading_1">Юридическая консультация и услуги юриста
+					<div class="slider__text slider__text__1 slider__text_active heading_1" name="1">Юридическая
+						консультация и
+						услуги юриста
 						в Ставрополе</div>
+					<div class="slider__text slider__text__2 heading_1" name="2">Ntrcnsadas</div>
+					<div class="slider__text slider__text__3 heading_1" name="3">ываыфвавыаыв</div>
+					<div class="slider__text slider__text__4 heading_1" name="4">фывфывфывфвфы</div>
 				</div>
 			</div>
 		</div>
@@ -122,10 +132,12 @@
 				Виды юридических услуг
 			</div>
 			<div class="services__menu">
-				<div class="services__menu-item text_btn">ДЛЯ ЧАСТНЫХ ЛИЦ</div>
-				<div class="services__menu-item-active text_btn">ДЛЯ ЮРИДИЧЕСКИХ ЛИЦ</div>
+				<div class="services__menu-item services__menu-item-active text_btn" num="0">ДЛЯ ЧАСТНЫХ ЛИЦ
+				</div>
+				<div class="services__menu-item text_btn" num="1">ДЛЯ ЮРИДИЧЕСКИХ ЛИЦ
+				</div>
 			</div>
-			<div class="services__items">
+			<div class="services__items services__items_active">
 				<div class="services__item">
 					<div class="services__img"><img src="img/service/serv1.png" alt="Наши услуги"></div>
 					<div class="services__wrapper">
@@ -164,6 +176,45 @@
 							при ДТП, возмещение вреда по ОСАГО, КАСКО)...</div>
 					</div>
 				</div>
+				<div class="services__item">
+					<div class="services__img"><img src="img/service/serv5.png" alt="Наши услуги"></div>
+					<div class="services__wrapper">
+						<div class="services__title heading_3">Защита прав<br>потребителей</div>
+						<div class="services__text text_3">Возврат денег за некачественный товар. Замена некачественного
+							товара...
+						</div>
+					</div>
+				</div>
+				<div class="services__item">
+					<div class="services__img"><img src="img/service/serv6.png" alt="Наши услуги"></div>
+					<div class="services__wrapper">
+						<div class="services__title heading_3">Налоговое<br>планирование</div>
+						<div class="services__text text_3">Исправное несение налоговой нагрузки – одна из важнейших
+							функций
+							организации, совместно выполняемая менеджментом...</div>
+					</div>
+				</div>
+				<div class="services__item">
+					<div class="services__img"><img src="img/service/serv7.png" alt="Наши услуги"></div>
+					<div class="services__wrapper">
+						<div class="services__title heading_3">Оценка активов</div>
+						<div class="services__text text_3">Проводим только законную и прогнозируемую оптимизацию. Прежде
+							чем
+							реализовать ваш проект, анализируем объект...</div>
+					</div>
+				</div>
+				<div class="services__item">
+					<div class="services__img"><img src="img/service/serv8.png" alt="Наши услуги"></div>
+					<div class="services__wrapper">
+						<div class="services__title heading_3">Защита в суде</div>
+						<div class="services__text text_3">Подготовка обращений и жалоб и представление интересов
+							граждан и
+							организаций в органах власти...</div>
+					</div>
+				</div>
+			</div>
+			<div class="services__items">
+
 				<div class="services__item">
 					<div class="services__img"><img src="img/service/serv5.png" alt="Наши услуги"></div>
 					<div class="services__wrapper">
@@ -259,8 +310,7 @@
 								представлять ваши интересы!</a></li>
 					</ul>
 				</div>
-				<div class="footer__block2"></div>
-				<div class="footer__block3">
+				<div class="footer__block2">
 					<ul class="footer__menu">
 						<li class="footer__menu-item"><a href="#" class="link">ГЛАВНАЯ</a></li>
 						<li class="footer__menu-item"><a href="#" class="link">УСЛУГИ</a></li>
@@ -268,14 +318,14 @@
 						<li class="footer__menu-item"><a href="#" class="link">КЕЙСЫ</a></li>
 					</ul>
 				</div>
-				<div class="footer__block4">
+				<div class="footer__block3">
 					<ul class="footer__menu">
 						<li class="footer__menu-item"><a href="#" class="link">ОТЗЫВЫ</a></li>
 						<li class="footer__menu-item"><a href="#" class="link">КОНТАКТЫ</a></li>
 						<li class="footer__menu-item"><a href="#" class="link">БЛОГ</a></li>
 					</ul>
 				</div>
-				<div class="footer__block5">
+				<div class="footer__block4">
 					<div class="footer__social">
 						<div class="footer__social-item"><a href="#">
 								<svg width="34" height="30" viewBox="0 0 34 30" fill="none"
@@ -303,12 +353,14 @@
 							</a></div>
 					</div>
 				</div>
-				<div class="footer__block6">
-					<svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path fill-rule="evenodd" clip-rule="evenodd"
-							d="M0.674174 14.0758C1.40641 14.8081 2.59359 14.8081 3.32582 14.0758L12 5.40165L20.6742 14.0758C21.4064 14.8081 22.5936 14.8081 23.3258 14.0758C24.0581 13.3436 24.0581 12.1564 23.3258 11.4242L13.3258 1.42418C12.5936 0.691942 11.4064 0.691942 10.6742 1.42418L0.674174 11.4242C-0.0580588 12.1564 -0.0580588 13.3436 0.674174 14.0758Z"
-							fill="white" />
-					</svg>
+				<div class="footer__block5">
+					<a href="#header">
+						<svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path fill-rule="evenodd" clip-rule="evenodd"
+								d="M0.674174 14.0758C1.40641 14.8081 2.59359 14.8081 3.32582 14.0758L12 5.40165L20.6742 14.0758C21.4064 14.8081 22.5936 14.8081 23.3258 14.0758C24.0581 13.3436 24.0581 12.1564 23.3258 11.4242L13.3258 1.42418C12.5936 0.691942 11.4064 0.691942 10.6742 1.42418L0.674174 11.4242C-0.0580588 12.1564 -0.0580588 13.3436 0.674174 14.0758Z"
+								fill="white" />
+						</svg>
+					</a>
 				</div>
 			</div>
 			<div class="footer__line"></div>
