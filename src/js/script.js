@@ -28,9 +28,6 @@ serv.forEach((el) => {
 
 //Слайдер
 
-let slider__left = document.querySelector('.slider__left');
-let slider__right = document.querySelector('.slider__right');
-
 function newSlideLeft() {
 	let slider__text_active = document.querySelector('.slider__text_active');
 	let num = slider__text_active.getAttribute('name');
@@ -45,8 +42,6 @@ function newSlideLeft() {
 	}
 };
 
-slider__left.addEventListener('click', newSlideLeft);
-
 function newSlideRight() {
 	let slider__text_active = document.querySelector('.slider__text_active');
 	let num = slider__text_active.getAttribute('name');
@@ -56,11 +51,29 @@ function newSlideRight() {
 	}
 	else {
 		slider__text_active.classList.remove('slider__text_active');
-		num = num + 1;
-		document.querySelector('.slider__text__2').classList.add('slider__text_active');
+		num = num * 1 + 1;
+		document.querySelector('.slider__text__' + num).classList.add('slider__text_active');
 	}
 };
 
+let slider__left = document.querySelector('.slider__left');
+let slider__right = document.querySelector('.slider__right');
+slider__left.addEventListener('click', newSlideLeft);
 slider__right.addEventListener('click', newSlideRight);
 
 
+// Плавный скролл
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+	anchor.addEventListener('click', function (e) {
+		e.preventDefault();
+
+		const blockID = anchor.getAttribute('href').substr(1);
+
+		document.getElementById(blockID).scrollIntoView({
+			behavior: 'smooth',
+			block: 'start'
+		})
+	})
+}

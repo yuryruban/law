@@ -33,3 +33,5 @@ let closeBtn = document.querySelector('.close');
 
 callback.addEventListener('click', show);
 closeBtn.addEventListener('click', show);
+
+
