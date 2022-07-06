@@ -1,0 +1,40 @@
+.cases {
+	background-color: $white;
+	color: $blue;
+	padding: 100px 0 100px 0;
+
+	&__desc {
+		color: $white;
+		background-color: $blue;
+		border-radius: 8px;
+		padding: 19px 15px;
+	}
+
+	&__items {
+		margin-top: 100px;
+	}
+
+	&__item {
+		padding: 40px 15px;
+		border: 1px solid $beige;
+		border-radius: 8px;
+
+		&-img {
+			position: relative;
+		}
+
+		&-alt {
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: $blue50;
+			border-radius: 8px;
+			padding: 13px 51px;
+			color: $white;
+		}
+
+		&-block {
+			margin-top: 15px;
+		}
+	}
+}
