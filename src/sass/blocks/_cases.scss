@@ -4,6 +4,7 @@
 	padding: 100px 0 100px 0;
 
 	&__desc {
+		margin-top: 40px;
 		color: $white;
 		background-color: $blue;
 		border-radius: 8px;
@@ -11,13 +12,14 @@
 	}
 
 	&__items {
-		margin-top: 100px;
+		margin-top: 50px;
 	}
 
 	&__item {
 		padding: 40px 15px;
 		border: 1px solid $beige;
 		border-radius: 8px;
+		margin: 50px auto;
 
 		&-img {
 			position: relative;
@@ -34,7 +36,32 @@
 		}
 
 		&-block {
-			margin-top: 15px;
+			margin-top: 29px;
+			display: grid;
+			grid-template-columns: 423px auto;
+			column-gap: 21px;
+		}
+
+		&-text {
+			position: relative;
+		}
+
+		&-more {
+			position: absolute;
+			top: 181px;
+			right: 0px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 132px;
+			height: 35px;
+			border: 1px solid #C1AA8C;
+			border-radius: 8px;
+			text-transform: none;
+
+			&:hover {
+				background-color: $beige;
+			}
 		}
 	}
 }

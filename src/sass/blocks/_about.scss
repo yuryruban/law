@@ -1,0 +1,37 @@
+.about {
+	&__body {
+		padding: 100px 0px;
+		color: $blue;
+		background-color: $white;
+	}
+
+	&__values {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+		margin: 0 auto;
+		width: 900px;
+	}
+
+	&__value {
+		width: 290px;
+		height: 325px;
+		padding: 20px 18px;
+		border: 1px solid #C1AA8C;
+		border-radius: 8px;
+		text-align: center;
+
+		&-heading {
+			margin-top: 20px;
+		}
+
+		&-text {
+			text-align: left;
+			margin-top: 40px;
+		}
+	}
+
+	&__desc {
+		margin: 100px 0 75px 0;
+	}
+}

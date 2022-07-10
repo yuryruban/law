@@ -76,6 +76,31 @@ input[type='tel'] {
 	background-color: $beige;
 }
 
+.stars {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 170px;
+
+	svg {
+		path {
+			fill: #ffcc00;
+		}
+	}
+
+	&-small {
+		width: 120px;
+	}
+
+	&__disactive {
+		svg {
+			path {
+				fill: #d8d8d8;
+			}
+		}
+	}
+}
+
 @import 'blocks/fonts';
 @import 'blocks/header';
 @import 'blocks/nav';
@@ -86,5 +111,11 @@ input[type='tel'] {
 @import 'blocks/contacts';
 @import 'blocks/footer';
 @import 'blocks/cases';
+@import 'blocks/case';
+@import 'blocks/servicesPage';
+@import 'blocks/review';
+@import 'blocks/about';
+@import 'blocks/prices';
+
 
 @import 'blocks/media';

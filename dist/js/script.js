@@ -1,3 +1,4 @@
+//Menu
 let burger = document.querySelector('.burger');
 
 burger.addEventListener('click', function () {
@@ -24,7 +25,17 @@ serv.forEach((el) => {
 	el.addEventListener('click', action)
 });
 
+//Price
+let price = document.querySelectorAll('.price__head');
 
+
+function newik() {
+	this.nextElementSibling.classList.toggle('price__body-active');
+}
+
+price.forEach((el1) => {
+	el1.addEventListener('click', newik);
+});
 
 //Слайдер
 
@@ -62,8 +73,10 @@ slider__left.addEventListener('click', newSlideLeft);
 slider__right.addEventListener('click', newSlideRight);
 
 
+
+
 // Плавный скролл
-const anchors = document.querySelectorAll('a[href*="#"]')
+const anchors = document.querySelectorAll('a[href*="#"]');
 
 for (let anchor of anchors) {
 	anchor.addEventListener('click', function (e) {
@@ -74,6 +87,9 @@ for (let anchor of anchors) {
 		document.getElementById(blockID).scrollIntoView({
 			behavior: 'smooth',
 			block: 'start'
-		})
-	})
-}
+		});
+	});
+};
+
+
+
