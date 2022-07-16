@@ -1,7 +1,7 @@
 .services {
 	background-color: $white;
 	color: $blue;
-	padding: 100px 0;
+	padding: 0 0 100px 0;
 
 	&__heading {
 		color: $blue;
@@ -54,6 +54,10 @@
 		&_active {
 			display: grid;
 		}
+
+		&_about {
+			margin-top: 100px;
+		}
 	}
 
 	&__item {
@@ -89,15 +93,34 @@
 		position: absolute;
 		top: 281px;
 		left: 30px;
+
+		&-about {
+			position: absolute;
+			top: 335px;
+			left: 30px;
+		}
 	}
 
 	&__title {
 		min-height: 46px;
 	}
 
+	&__mail {
+		&-about {
+			margin-top: 15px;
+			color: $beige;
+			font-size: 14px;
+		}
+	}
+
 	&__text {
 		margin-top: 18px;
 		width: 88%;
+
+		&-about {
+			margin-top: 15px;
+		}
+
 	}
 
 	&__btn {
