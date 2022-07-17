@@ -7,6 +7,14 @@
 		display: grid;
 		grid-template-columns: 308px auto;
 		column-gap: 100px;
+
+		&-map {
+			border: 5px solid $blue;
+
+			.ymaps-2-1-79-inner-panes {
+				width: 100%;
+			}
+		}
 	}
 
 	&__heading {

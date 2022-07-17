@@ -82,9 +82,20 @@ input[type='tel'] {
 	align-items: center;
 	width: 170px;
 
+	&_new {
+		svg {
+			path {
+				&:hover {
+					cursor: pointer;
+					fill: $beige;
+				}
+			}
+		}
+	}
+
 	svg {
 		path {
-			fill: #ffcc00;
+			fill: $beige;
 		}
 	}
 
@@ -118,6 +129,6 @@ input[type='tel'] {
 @import 'blocks/prices';
 @import 'blocks/blog';
 @import 'blocks/article';
-
+@import 'blocks/popup';
 
 @import 'blocks/media';

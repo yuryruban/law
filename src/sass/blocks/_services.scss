@@ -3,6 +3,10 @@
 	color: $blue;
 	padding: 0 0 100px 0;
 
+	&_main {
+		padding-top: 100px;
+	}
+
 	&__heading {
 		color: $blue;
 	}
@@ -128,6 +132,5 @@
 		margin: 0 auto;
 		margin-top: 100px;
 		text-align: center;
-		font-size: 22px;
 	}
 }

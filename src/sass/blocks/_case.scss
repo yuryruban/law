@@ -22,6 +22,12 @@
 		padding: 40px 15px;
 		margin-bottom: 50px;
 
+		&_article {
+			width: 80%;
+			max-width: 895px;
+			margin: 0px auto 50px auto;
+		}
+
 		&-head {
 			display: grid;
 			grid-template-columns: 60px auto;
@@ -35,6 +41,10 @@
 		&-text {
 			margin-top: 40px;
 		}
+	}
+
+	&__img {
+		margin-bottom: 50px;
 	}
 
 	&__btn {

@@ -24,6 +24,17 @@ serv.forEach((el) => {
 	el.addEventListener('click', action)
 });
 
+//Popup
+let btn_popup = document.querySelector('.btn_popup'),
+	close_popup = document.querySelector('.popup__wrapper-close');
+
+function popup_active() {
+	document.querySelector('.popup').classList.toggle('popup_active');
+};
+
+btn_popup.addEventListener('click', popup_active);
+close_popup.addEventListener('click', popup_active);
+
 //Price
 let price = document.querySelectorAll('.price__head');
 
